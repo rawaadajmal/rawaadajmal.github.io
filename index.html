@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arrow Puzzle Master — Rawaad Ajmal</title>
+<meta name="description" content="Arrow Puzzle Master is a relaxing arrow puzzle game. Tap the arrows in the right order, clear the board, and travel through six themed worlds.">
+<link rel="icon" href="data:,">
+<style>
+  :root{
+    --green:#0B3B2C;
+    --green-dark:#082B20;
+    --cream:#FFF9EF;
+    --ink:#1A2B25;
+    --muted:#5A6B64;
+    --line:#E8DCC8;
+    --gold:#E8B84B;
+    --card:#FFFFFF;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height:1.65;
+    font-size:17px;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--green); text-decoration: underline; text-underline-offset: 2px;}
+  a:hover{color:var(--green-dark);}
+
+  /* Header / Hero */
+  header{
+    background:var(--green);
+    color:#FFF9EF;
+    padding:64px 20px 56px;
+    text-align:center;
+  }
+  .hero-inner{max-width:720px; margin:0 auto;}
+  .badge{
+    display:inline-flex; align-items:center; gap:8px;
+    border:1px solid rgba(255,249,239,.35);
+    color:#FFE9A8;
+    font-size:13px; letter-spacing:.14em; text-transform:uppercase;
+    padding:7px 14px; border-radius:999px; margin-bottom:22px;
+  }
+  .badge i{width:7px;height:7px;border-radius:50%;background:var(--gold);display:inline-block;}
+  h1{
+    font-size:clamp(38px, 7vw, 58px);
+    line-height:1.05; margin:0 0 18px; font-weight:800; letter-spacing:-0.02em;
+    color:#FFFFFF;
+  }
+  .subtitle{
+    font-size:clamp(17px, 2.6vw, 20px);
+    line-height:1.55; color:#DDE8E1; max-width:620px; margin:0 auto 32px;
+  }
+  .play-btn{
+    display:inline-flex; align-items:center; gap:12px;
+    background:#FFFFFF; color:var(--green);
+    font-weight:700; font-size:17px; text-decoration:none;
+    padding:14px 26px; border-radius:12px; min-height:52px;
+    box-shadow:0 10px 28px rgba(0,0,0,.22);
+  }
+  .play-btn:hover{background:#FFF3D6; color:var(--green-dark);}
+  .play-btn svg{flex-shrink:0;}
+  .hero-meta{margin-top:18px; font-size:14px; color:#A9BFB4;}
+
+  /* Layout */
+  main{max-width:760px; margin:0 auto; padding:0 20px;}
+  section{padding:44px 0 8px;}
+  section + section{border-top:1px solid var(--line); margin-top:36px;}
+  h2{
+    font-size:28px; line-height:1.2; margin:0 0 16px; color:var(--green);
+    font-weight:800; letter-spacing:-0.01em;
+  }
+  p{margin:0 0 16px;}
+  .lead{font-size:18px; color:#2E3D37;}
+
+  /* Features */
+  .features{list-style:none; margin:8px 0 0; padding:0; display:grid; gap:14px;}
+  .features li{
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:18px 20px 18px 52px; position:relative; line-height:1.6;
+  }
+  .features li::before{
+    content:""; position:absolute; left:20px; top:24px;
+    width:10px; height:10px; border-radius:50%; background:var(--green);
+    box-shadow:0 0 0 4px #E6EFEA;
+  }
+  .features strong{color:var(--green);}
+
+  /* Privacy */
+  #privacy{
+    background:var(--card); border:1px solid var(--line); border-radius:16px;
+    padding:32px 28px 12px; margin-top:44px;
+  }
+  #privacy h2{font-size:26px;}
+  #privacy h3{font-size:17px; margin:26px 0 8px; color:var(--green); font-weight:700;}
+  #privacy p{font-size:16px; color:#2E3D37;}
+  #privacy a{overflow-wrap:anywhere; word-break:break-word;}
+  .effective{font-weight:600; color:var(--muted); font-size:15px !important; margin-bottom:4px;}
+
+  /* Footer */
+  footer{
+    margin-top:56px; background:var(--green); color:#DDE8E1;
+    padding:28px 20px; text-align:center; font-size:15px;
+  }
+  footer a{color:#FFE9A8;}
+  footer .sep{margin:0 10px; opacity:.5;}
+
+  @media (max-width:520px){
+    header{padding:48px 18px 44px;}
+    section{padding:36px 0 4px;}
+    #privacy{padding:24px 20px 8px;}
+    .play-btn{width:100%; justify-content:center;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hero-inner">
+    <h1>Arrow Puzzle Master</h1>
+    <p class="subtitle">A relaxing arrow puzzle game. Tap the arrows in the right order, clear the board, and travel through six themed worlds.</p>
+    <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.rawaadajmal.puzzlegame" target="_blank" rel="noopener">
+      <svg width="20" height="22" viewBox="0 0 24 24" fill="#0B3B2C" aria-hidden="true"><path d="M4 3.5v17c0 .8.9 1.3 1.6.9l13.2-8.5c.6-.4.6-1.4 0-1.8L5.6 2.6C4.9 2.2 4 2.7 4 3.5Z"/></svg>
+      Get it on Google Play
+    </a>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <h2>About the game</h2>
+    <p class="lead">Arrow Puzzle Master is a casual puzzle game built around one simple idea: every arrow on the board can only leave in one direction, and only when its path is clear. Find the right order, clear the board, and move forward — easy to learn, satisfying to master.</p>
+  </section>
+
+  <section>
+    <h2>Features</h2>
+    <ul class="features">
+      <li><strong>Adventure mode:</strong> 300 levels across 6 themed zones — Forest, Desert, Ice, Volcano, Ocean and Space — each harder than the last, with a boss level at the end of every zone.</li>
+      <li><strong>Daily Challenge:</strong> a new 7-day challenge journey with streaks. Clear a day to earn 1,000 points.</li>
+      <li><strong>Points to Lives:</strong> turn your earned points into extra lives whenever you need them.</li>
+      <li>Six visual themes and gentle sound effects for a calm, focused game feel.</li>
+      <li>Plays offline — your progress is saved on your own device.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>About the developer</h2>
+    <p>Arrow Puzzle Master is designed and developed by Rawaad Ajmal, an independent Android developer from Pakistan. Questions, feedback and suggestions are welcome at <a href="mailto:rawaadajmal.apps@gmail.com">rawaadajmal.apps@gmail.com</a>.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy Policy — Arrow Puzzle Master</h2>
+    <p class="effective">Effective Date: November 23, 2026</p>
+
+    <h3>1. Introduction</h3>
+    <p>Rawaad Ajmal (&ldquo;we&rdquo;, &ldquo;our&rdquo;) operates the Arrow Puzzle Master mobile game (&ldquo;the App&rdquo;). This Privacy Policy explains what information the App handles when you play.</p>
+
+    <h3>2. Information We Collect</h3>
+    <p>We do not ask for your name, email, or any account information. The App stores game data only on your device, including: unlocked levels and progress, selected theme, sound/vibration settings, points, wallet lives, Daily Challenge streak and history, Adventure mode progress and collectibles, and tutorial status. This data never leaves your device except as described below. Uninstalling the App deletes it.</p>
+
+    <h3>3. Advertising</h3>
+    <p>The App shows ads provided by Google AdMob. AdMob and Google may automatically collect certain information from your device to serve and measure ads, such as your device&rsquo;s Advertising ID, IP address, approximate location, and interactions with ads. This is governed by Google&rsquo;s Privacy Policy (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>) and &ldquo;How Google uses information from sites or apps that use our services&rdquo; (<a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">https://policies.google.com/technologies/partner-sites</a>). You can reset or opt out of personalized ads in your device&rsquo;s Settings &gt; Google &gt; Ads.</p>
+
+    <h3>4. How We Use Information</h3>
+    <p>Locally stored game data is used only to run the game (saving progress and settings). We do not sell, rent, or share your information with anyone.</p>
+
+    <h3>5. Children&rsquo;s Privacy</h3>
+    <p>The App is suitable for general audiences. We do not knowingly collect personal information from children under 13. If you believe a child has provided personal information through the App, contact us and we will address it promptly.</p>
+
+    <h3>6. Data Security</h3>
+    <p>Game data is kept in your device&rsquo;s private app storage, which other apps cannot normally access. No data is transmitted to our servers because we operate none for this App.</p>
+
+    <h3>7. Changes to This Policy</h3>
+    <p>If we change this policy, we will update the Effective Date above and publish the new version at the same link.</p>
+
+    <h3>8. Contact Us</h3>
+    <p>Questions about this Privacy Policy: <a href="mailto:rawaadajmal.apps@gmail.com">rawaadajmal.apps@gmail.com</a></p>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Rawaad Ajmal <span class="sep">·</span> <a href="#privacy">Privacy Policy</a>
+</footer>
+
+</body>
+</html>
